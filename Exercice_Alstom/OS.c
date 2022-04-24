@@ -39,10 +39,10 @@ void loop_OS() // Boucle infninie
 		lcd_gotoxy(0,1); // commencer a la position (x,y) sur le LCD
 		lcd_puts("commencer"); // affichage du texte sur le LCD
 		etape1 = TRUE; // activation de l'etape 1, pour uniquement rentrer dans la condition 1 dans l'ISR lors de l'interrutpion du bouton
-		while (etape1 == TRUE); // Periode d'attente du premier appuis du bouton
+		while (etape1 == TRUE); // Periode d'attente du premier appui du bouton
 		lcd_clrscr();
 		lcd_puts("...");	
-		srand(timing); // definition d'un "seed" pour ne pas generer a chaque fois les mêmes nombre par la fonction rand()
+		srand(timing); // definition d'un "seed" pour ne pas generer a chaque fois les mêmes nombres par la fonction rand()
 		CLR_BIT(TIMSK0,TOIE0); // desactivation du timer
 		nombre = rand() % (MAX1 + 1); // generation d'un nombre aleatoire, en lui imposant un nombre maximal defini grace a une loi mathematique du modulo
 		nombre_random1 = MIN1 + nombre; // ajout d'une valeur minimum de temps a cette valeur 
