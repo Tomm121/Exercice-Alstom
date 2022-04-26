@@ -11,7 +11,7 @@
 
 void hardware_init()
 {
-	// Configuration des pins en entrées ou en sorties (1 = sortie / 0 = entree)
+	// Configuration des pins en entrees ou en sorties (1 = sortie / 0 = entree)
 	SET_BIT(DDRD,DDD7); // LED
 	CLR_BIT(DDRD,DDD2); // Bouton poussoir
 	
