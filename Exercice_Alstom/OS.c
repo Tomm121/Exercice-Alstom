@@ -16,6 +16,8 @@
 #include <util/delay.h>
 #include "avr/interrupt.h"
 
+//TEST GITHUB
+
 int nombre;
 uint8_t volatile etape1; // variable bol qui active l'etape 1
 uint8_t volatile etape2; // variable bol qui active l'etape 2
@@ -106,6 +108,6 @@ ISR(INT0_vect)
 		CLR_BIT(EICRA,ISC00); // re-definition du parametre de l'interruption, pour le faire reagir lors dans flancs descendants
 		CLR_BIT(TIMSK0,TOIE0); //desactivation du timer
 		CLR_BIT(PORTD,PORTD7); // desactivation de la LED
-		etape3 = FALSE; // desactivation de l'etape 3, pour que la condition de la boucle while ne soit plus verifiee
+		etape3 = FALSE; // desactivation de l'etape 3, pour que la condition de la boucle while() ne soit plus verifiee
 	}
 }

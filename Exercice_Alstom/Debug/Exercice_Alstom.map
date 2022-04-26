@@ -733,7 +733,7 @@ END GROUP
  .debug_frame   0x00000130       0x90 OS.o
  .debug_frame   0x000001c0       0x24 timers.o
 
-.debug_str      0x00000000      0x68d
+.debug_str      0x00000000      0x6d2
  *(.debug_str)
  .debug_str     0x00000000      0x296 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51/crtatmega1284p.o
  .debug_str     0x00000296      0x18b hardware.o
@@ -742,9 +742,9 @@ END GROUP
                                 0x256 (size before relaxing)
  .debug_str     0x0000054f       0x29 main.o
                                 0x1d9 (size before relaxing)
- .debug_str     0x00000578      0x107 OS.o
-                                0x2f0 (size before relaxing)
- .debug_str     0x0000067f        0xe timers.o
+ .debug_str     0x00000578      0x14c OS.o
+                                0x2b7 (size before relaxing)
+ .debug_str     0x000006c4        0xe timers.o
                                 0x1b3 (size before relaxing)
 
 .debug_loc      0x00000000      0x55d
